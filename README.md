@@ -2,7 +2,7 @@
 
 ## Instrucciones para correr la imagen docker
 
-Primero corremos el comando
+Primero debemos ingresar a la carpeta Docker y corremos el comando
 
     docker build -t prueba-docker .
 
