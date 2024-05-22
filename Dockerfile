@@ -7,7 +7,7 @@ RUN npm install -g @angular/cli
 
 COPY nginx.conf /etc/nginx/
 RUN mkdir /volumen
-RUN --mount=type=bind,source=volumen,target=/volumen,readwrite
+RUN --mount=type=bind,source=./volumen,target=/volumen,readwrite
 RUN cd /volumen && \
         ng new pagina && \
         echo "<h1>¡Bienvenido a mi servidor Docker con Angular!</h1> \n <router-outlet />" > pagina/src/app/app.component.html && \
